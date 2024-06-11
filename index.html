@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+    <!-- css -->
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="atm-body">
+            <div class="screen">
+                <div class="display">
+                    <div class="login" id="login">
+                        <div class="title">
+                            <h1>Welcome To <br>ABC Bank</h1>
+                        </div>
+                        <label for="">Account No:</label>
+                        <input type="text" name="" id="acc">
+                        <label for="" style="margin-top: 5%;">Pin No:</label>
+                        <input type="text" name="" id="pin">
+                    </div>
+                    <div class="first-screen" id="main-screen">
+                        <!-- <div class="title">
+                            <h1>Welcome To <br>ABC Bank</h1>
+                        </div> -->
+                        <span>Withdraw Cash</span>
+                        <span>Deposit Cash</span>
+                        <span>Fast Cash</span>
+                        <span>Pin Change</span>
+                        <span>Balance Inquery</span>
+                        <span>Mobile Number</span>
+                        <span>Transaction Recipet</span>
+                        <span>Services</span>
+                    </div>
+                    <div class="withdraw-screen" style="padding: 10px;" id="withdraw-screen">
+                        <div class="title">
+                            <h1>Welcome To <br>ABC Bank</h1>
+                        </div>
+                        <label for="">Enter Amount:</label>
+                        <input type="text" name="" id="withdraw">
+                    </div>
+                    <div class="deposit-screen" id="deposit-screen">
+                        <div class="title">
+                            <h1>Welcome To <br>ABC Bank</h1>
+                        </div>
+                        <label for="">Enter Amount:</label>
+                        <input type="text" name="" id="depositcash">
+                    </div>
+                    <div class="balance-screen" id="balance-screen">
+                        <div class="title">
+                            <h1>Welcome To <br>ABC Bank</h1>
+                        </div>
+                        <label for="">Balance:</label>
+                        <h3 id="balance_screen"></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-btn">
+                <ul type="none" class="btn-right">
+                    <li><button class="screen-btn balance" onclick="balance()"></button></li>
+                    <li><button class="screen-btn mobile"></button></li>
+                    <li><button class="screen-btn fast"></button></li>
+                    <li><button class="screen-btn pin"></button></li>
+                </ul>
+                <ul type="none" class="btn-left">
+                    <li><button class="screen-btn withdarw" onclick="drawcash()"></button></li>
+                    <li><button class="screen-btn deposit" onclick="deposit()"></button></li>
+                    <li><button class="screen-btn recipet"></button></li>
+                    <li><button class="screen-btn service"></button></li>
+                </ul>
+            </div>
+            <div class="control-area">
+                <div class="pass-btn-body">
+                    <div class="pass-btn-group">
+                        <button class="pass-b" id="pass-b" onclick="keypress(1)" value="1">1</button>
+                        <button class="pass-b" value="2" onclick="keypress(2)">2</button>
+                        <button class="pass-b" value="3" onclick="keypress(3)">3</button>
+                        <button class="pass-r" value="" onclick="keypress()">DEL</button>
+                        <button class="pass-b" value="4" onclick="keypress(4)">4</button>
+                        <button class="pass-b" value="5" onclick="keypress(5)">5</button>
+                        <button class="pass-b" value="6" onclick="keypress(6)">6</button>
+                        <button class="pass-y" value="">DEL</button>
+                        <button class="pass-b" value="7" onclick="keypress(7)">7</button>
+                        <button class="pass-b" value="8" onclick="keypress(8)">8</button>
+                        <button class="pass-b" value="9" onclick="keypress(9)">9</button>
+                        <button class="pass-g" onclick="done();" value="">DON</button>
+                        <button class="pass-b" value="*" onclick="keypress('*')">*</button>
+                        <button class="pass-b" value="0" onclick="keypress(0)">0</button>
+                        <button class="pass-b" value="#" onclick="keypress('#')">#</button>
+                        <button class="pass-dsb"></button>
+                    </div>
+                </div>
+                <div class="cash-tray">
+                    <div class="cash-light"></div>
+                    <div class="tray"></div>
+                </div>
+                <div class="card-tray">
+                    <div class="card-light-red"></div>
+                    <div class="card-light"></div>
+                    <div class="tray"></div>
+                    <div class="tray-2"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- jquery -->
+    <script src="asset/js/jquery-3.7.1.min.js"></script>
+    <!-- main.js -->
+    <script src="asset/js/main.js"></script>
+</body>
+
+</html>
